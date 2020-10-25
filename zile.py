@@ -16,7 +16,7 @@ patterns = {
 "slack_token": "(xox[p|b|o|a]-[0-9]{12}-[0-9]{12}-[0-9]{12}-[a-z0-9]{32})",
 "slack_webhook": "https://hooks.slack.com/services/T[a-zA-Z0-9_]{8}/B[a-zA-Z0-9_]{8}/[a-zA-Z0-9_]{24}",
 "facebook_oauth": "[f|F][a|A][c|C][e|E][b|B][o|O][o|O][k|K].{0,30}['\"\\s][0-9a-f]{32}['\"\\s]",
-"Facebook_Access_Token": "EAACEdEose0cBA[0-9A-Za-z]+"
+"Facebook_Access_Token": "EAACEdEose0cBA[0-9A-Za-z]+",
 "twitter_oauth": "[t|T][w|W][i|I][t|T][t|T][e|E][r|R].{0,30}['\"\\s][0-9a-zA-Z]{35,44}['\"\\s]",
 "twitter_access_token": "[t|T][w|W][i|I][t|T][t|T][e|E][r|R].*[1-9][0-9]+-[0-9a-zA-Z]{40}",
 "heroku_api": "[h|H][e|E][r|R][o|O][k|K][u|U].{0,30}[0-9A-F]{8}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{12}",
@@ -39,10 +39,10 @@ patterns = {
 "Amazon_AWS_S3_Bucket4": "//s3\\.amazonaws\\.com/[a-z0-9._-]+",
 "Amazon_AWS_S3_Bucket5": "//s3-[a-z0-9-]+\\.amazonaws\\.com/[a-z0-9._-]+",
 "Amazon_AWS_S3_BucketMWS": "amzn\\.mws\\.[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}",
-"Generic API Key": "[a|A][p|P][i|I][_]?[k|K][e|E][y|Y].*['|\"][0-9a-zA-Z]{32,45}['|\"]",
+"Generic_API_Key": "[a|A][p|P][i|I][_]?[k|K][e|E][y|Y].*['|\"][0-9a-zA-Z]{32,45}['|\"]",
 "facebook_access_token": "EAACEdEose0cBA[0-9A-Za-z]+",
 "mailgun_api_key": "key-[0-9a-zA-Z]{32}",
-"MailChimp_API_Key": "[0-9a-f]{32}-us[0-9]{1,2}"
+"MailChimp_API_Key": "[0-9a-f]{32}-us[0-9]{1,2}",
 "twilio_api_key": "SK[0-9a-fA-F]{32}",
 "twilio_account_sid": "AC[a-zA-Z0-9_\\-]{32}",
 "twilio_app_sid": "AP[a-zA-Z0-9_\\-]{32}",
@@ -80,7 +80,7 @@ patterns = {
 "Google_YouTube_OAuth": "[0-9]+-[0-9A-Za-z_]{32}\\.apps\\.googleusercontent\\.com",
 "Google_Gmail_API_Key": "AIza[0-9A-Za-z\\-_]{35}",
 "Google_Gmail_OAuth": "[0-9]+-[0-9A-Za-z_]{32}\\.apps\\.googleusercontent\\.com",
-"Google (GCP) Service-account": "\"type\": \"service_account\""
+"Google_GCP_Service-account": "\"type\": \"service_account\""
 }
 patterns = list(zip(patterns.keys(), patterns.values()))
 # Base Variables
